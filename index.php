@@ -9,6 +9,8 @@
 
 <title>PHP Contact Form</title>
 
+	
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     
@@ -17,8 +19,6 @@
     
     <link rel="stylesheet" type="text/css" href="css/mystyles.css">
     
-    
-
 </head>
 
 <body>
@@ -31,12 +31,12 @@
                 
                 <?php echo $result; ?>
                 
-                <p>Please leave your comment and I will respond shortly</p>
+                <p class="lead">Please leave your comment and I will respond shortly</p>
                 
                 <form method="post">
                 	<div class="form-group">
                     	<label for="name"> Your Name: </label>
-                        <input type="text" name="names" class="form-control" placeholder="Your Name" value="<?php echo $_POST['name']; ?>"/>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" value="<?php echo $_POST['name']; ?>"/>
                     </div>
                     
                     <div class="form-group">
